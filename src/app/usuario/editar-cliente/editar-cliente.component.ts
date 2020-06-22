@@ -41,6 +41,11 @@ export class EditarClienteComponent implements OnInit {
       (cliente: Client) => {
         alert("Cliente editado");
         this.router.navigate(['user']);
+      }, (err) => {
+        alert(err.error.message);
+        
+      }  
+      
       })
 
     //console.log(this.usuarioService.name);

@@ -26,8 +26,11 @@ export class LoginComponent implements OnInit {
       (token: Token) => {
         localStorage.setItem('token', token.token);
         this.router.navigate(['user']);
-      },
-      err => alert("Erro ao logar")
+      }, (err) => {
+        alert(err.error.message);
+        
+      }  
+    
       )
 
     //console.log(this.usuarioService.name);

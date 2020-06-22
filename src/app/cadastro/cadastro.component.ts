@@ -28,6 +28,10 @@ export class CadastroComponent implements OnInit {
       (usuario: User) => {
         alert("Usuario cadastrado");
         this.router.navigate(['']);
+      }, (err) => {
+        alert(err.error.message);
+        
+      }  
       })
 
     console.log(this.cadastroForm);

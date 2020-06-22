@@ -35,6 +35,11 @@ export class EditarUsuarioComponent implements OnInit {
       () => {
         alert("Usuario editado");
         this.router.navigate(['user']);
+
+      }, (err) => {
+        alert(err.error.message);
+        
+      }  
       })
   }
 

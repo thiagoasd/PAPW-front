@@ -27,6 +27,10 @@ export class CriarClienteComponent implements OnInit {
       (cliente: Client) => {
         alert("Cliente criado");
         this.router.navigate(['user']);
+      }, (err) => {
+        alert(err.error.message);
+        
+      }  
       })
 
     //console.log(this.usuarioService.name);
