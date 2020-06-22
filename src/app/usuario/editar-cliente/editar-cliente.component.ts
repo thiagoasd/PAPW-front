@@ -43,15 +43,11 @@ export class EditarClienteComponent implements OnInit {
         this.router.navigate(['user']);
       }, (err) => {
         alert(err.error.message);
-        
-      }  
-      
       })
 
-    //console.log(this.usuarioService.name);
   }
 
-  voltar(){
+  voltar() {
     this.router.navigate(['user']);
   }
 

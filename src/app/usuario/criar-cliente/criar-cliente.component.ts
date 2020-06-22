@@ -30,7 +30,6 @@ export class CriarClienteComponent implements OnInit {
       }, (err) => {
         alert(err.error.message);
         
-      }  
       })
 
     //console.log(this.usuarioService.name);

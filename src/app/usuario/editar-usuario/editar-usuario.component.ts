@@ -38,8 +38,6 @@ export class EditarUsuarioComponent implements OnInit {
 
       }, (err) => {
         alert(err.error.message);
-        
-      }  
       })
   }
 

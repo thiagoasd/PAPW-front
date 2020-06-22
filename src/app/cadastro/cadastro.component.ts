@@ -31,7 +31,6 @@ export class CadastroComponent implements OnInit {
       }, (err) => {
         alert(err.error.message);
         
-      }  
       })
 
     console.log(this.cadastroForm);
