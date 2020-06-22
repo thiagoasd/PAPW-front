@@ -31,7 +31,7 @@ export class EditarUsuarioComponent implements OnInit {
   }
 
   submit() {
-    this.usuarioService.EditarMeuPerfil(this.usuarioForm.get('name').value, this.usuarioForm.get('phone_number').value, this.usuarioForm.get('password').value).subscribe(
+    this.usuarioService.editarMeuPerfil(this.usuarioForm.get('name').value, this.usuarioForm.get('phone_number').value, this.usuarioForm.get('password').value).subscribe(
       () => {
         alert("Usuario editado");
         this.router.navigate(['user']);

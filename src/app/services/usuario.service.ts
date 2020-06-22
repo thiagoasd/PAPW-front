@@ -21,9 +21,13 @@ export class UsuarioService {
     return this.httpClient.get(this.url + "/users/me", { headers: this.getHeaders() })
   }
 
-  EditarMeuPerfil(nome: string, telefone: string, senha: string) {
+  editarMeuPerfil(nome: string, telefone: string, senha: string) {
     let tmp = { name: nome, phone_number: telefone, password: senha }
     return this.httpClient.put(this.url + "/users/me", tmp, { headers: this.getHeaders() })
+  }
+
+  excluirMeuPerfil() {
+    return this.httpClient.delete(this.url + "/users/me",{ headers: this.getHeaders() })
   }
 
   getHeaders(): HttpHeaders {

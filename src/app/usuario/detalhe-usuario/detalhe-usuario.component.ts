@@ -27,4 +27,14 @@ export class DetalheUsuarioComponent implements OnInit {
     this.router.navigate(['editarUsuario']);
   }
 
+  excluir() {
+    if (window.confirm('Gostaria mesmo de deletar sua conta?')) {
+      this.usuarioService.excluirMeuPerfil().subscribe(() => {
+        alert('Conta deletada')
+        this.router.navigate([''])
+      })
+    }
+
+  }
+
 }
