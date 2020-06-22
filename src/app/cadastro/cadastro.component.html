@@ -1,0 +1,38 @@
+<style>
+.container {
+  min-width: 800px;
+}
+</style>
+
+<div class="container">
+    <div class="card-heading text-center">
+        <h1>Cadastro</h1>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="cadastroForm" class="form">
+            <div class="card-body text-center">
+                <div class="row col-3">
+                    <label for="nome" class="labels">Nome</label>
+                    <input class="form-control" formControlName="nome" type="text" id="nome">
+                </div>
+                <div class="row col-3">
+                    <label for="telefone" class="labels">Telefone</label>
+                    <input class="form-control" type="tel" formControlName="telefone" id="telefone" maxlength="11" minlength="9">
+                </div>
+                <div class="row col-3">
+                    <label for="senha" class="labels">Senha</label>
+                    <input class="form-control" type="password" formControlName="senha" id="senha">
+                </div>
+                <div class="row col-3">
+                    <button type="button" (click)="submit()">Enviar</button>
+                </div>
+
+                <div class="row">
+                    <a href="">
+                        Voltar
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

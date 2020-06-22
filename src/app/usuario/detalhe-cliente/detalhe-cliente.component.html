@@ -1,0 +1,33 @@
+<div class="container" role="main">
+    <div class="card-heading text-center">
+        <h1>Detalhes cliente</h1>
+    </div>
+    <div class="card-body">
+        <div class="card-body text-center">
+            <div class="row col-3">
+                <label for="name" class="labels">Nome</label>
+                <input class="form-control" type="tel"  id="name" [value]="cliente.name" disabled>
+            </div>
+            <div class="row col-3">
+                <label for="phone_number" class="labels">telefone</label>
+                <input class="form-control" type="text" id="phone_number" [value]="cliente.phone_number" disabled>
+            </div>
+            <div class="row col-3">
+                <label for="zip_code" class="labels">CEP</label>
+                <input class="form-control" type="text"  id="zip_code" [value]="cliente.zip_code" disabled>
+            </div>
+            <div class="row col-3">
+                <label for="address_number" class="labels">Num</label>
+                <input class="form-control" type="text"  id="address_number" [value]="cliente.address_number" disabled>
+            </div>
+            <div class="row col-6">
+                <button class="col-3 btn btn-primary" type="button" (click)="voltar()">Voltar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .container {
+        min-width: 800px;
+    }
+</style>

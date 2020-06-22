@@ -1,0 +1,24 @@
+<div class="content" role="main">
+    <div class="card-heading text-center">
+        <h1>Bem vindo ao cadastrador de clientes</h1>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="loginForm" class="form">
+            <div class="card-body text-center">
+                <div class="row col-3">
+                    <label for="telefone" class="labels">Telefone</label>
+                    <input class="form-control" type="tel" formControlName="telefone" id="telefone" maxlength="11"
+                        minlength="9">
+                </div>
+                <div class="row col-3">
+                    <label for="senha" class="labels">Senha</label>
+                    <input class="form-control" type="password" formControlName="senha" id="senha">
+                </div>
+                <div class="row col-3">
+                    <button type="button" (click)="submit()">Logar</button>
+                </div>
+            </div>
+        </form>
+        <a href="/cadastro">Não possui cadastro?</a>
+    </div>
+</div>

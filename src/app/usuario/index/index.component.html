@@ -1,0 +1,31 @@
+<div class="content" role="main">
+    <div class="card-heading text-center">
+        <h1>Seus clientes</h1>
+    </div>
+    <div class="card-body">
+<div class="row">
+<a class="col-2" href="criarCliente">Adicionar cliente</a>
+<a class="col-2" href="detalheUsuario">Meu perfil</a>
+</div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clientes; index as i">
+                    <td (click)="detalhe(cliente.id)">{{i+1}}</td>
+                    <td (click)="detalhe(cliente.id)" >{{cliente.name}}</td>
+                    <td (click)="detalhe(cliente.id)">{{cliente.phone_number}}</td>
+                    <td><button class="btn btn-primary" (click)="editar(cliente.id)">editar</button></td>
+                    <td><button class="btn btn-primary" (click)="excluir(cliente.id)">excluir</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
