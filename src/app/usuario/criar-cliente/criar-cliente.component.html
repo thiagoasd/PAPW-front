@@ -10,7 +10,7 @@
                     <input class="form-control" type="tel" formControlName="name" id="name" required>
                 </div>
                 <div class="row col-3">
-                    <label for="phone_number" class="labels">telefone</label>
+                    <label for="phone_number" class="labels">Telefone</label>
                     <input class="form-control" type="text" formControlName="phone_number" id="phone_number" required minlength="9" maxlength="11">
                 </div>
                 <div class="row col-3">
@@ -21,7 +21,7 @@
                     <label for="address_number" class="labels">Num</label>
                     <input class="form-control" type="text" formControlName="address_number" id="address_number" required>
                 </div>
-                <div class="row col-6">
+                <div class="row col-6" style="margin-top: 5px;">
                     <button type="button" class="col-3 btn btn-primary" (click)="submit()" [disabled]="!clienteForm.valid">Criar</button>
                     <button type="button" class="col-3 btn btn-primary" (click)="voltar()">Voltar</button>
                 </div>
