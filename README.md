@@ -1,27 +1,33 @@
-# PapwFRONT
+# PAPW
+Repositório para disciplina de Programação Avançada Para Web do curso de Ciência da Computação, 6º período, 2020.1, ministrada pelo professor [Rodrigo Fujioka](https://github.com/rodrigofujioka)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+## API para registro de clientes
 
-## Development server
+Neste repositório foi construido uma API REST para gerenciamento de clientes, com funcionalidades como autenticação de usuário e validação de dados.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Ferramentas
 
-## Code scaffolding
+As ferramentas utilizadas foram:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Typescript](https://www.typescriptlang.org/) como linguagem (sim, sabemos que é um superset do javascript)
+- [Express](https://expressjs.com/pt-br/) como micro-framework
+- [TypeORM](https://typeorm.io/) como ORM
+- [sqlite3](https://www.sqlite.org/) como banco de dados
+- [Yup](https://github.com/jquense/yup) como validador de dados
+- [bcryptjs](https://github.com/dcodeIO/bcrypt.js) como encriptador de dados
+- [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) como encriptador de token jwt
+- [dotenv](https://github.com/motdotla/dotenv) como inicializador de variáveis de ambiente
+- [env-var](https://github.com/evanshortiss/env-var) como invólucro a fim de melhorar a experiência em lidar com variáveis de ambiente
+- [ts-node-dev](https://github.com/whitecolor/ts-node-dev) para iniciar a aplicação com funcionalidades extras para aumentar a produtividade no desenvolvimento
+- [Angular](https://angular.io/) como frontend
 
-## Build
+### Desafios
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Os desafios encontrados foram aplicar os patterns aprendidos na disciplina, a fim de melhorar a organização do código, como os conceitos de entidades, repositórios, camada de serviços e DTO, onde todos são de muita importância na carreira de desenvolvedor como um todo, pois aplicam-se de maneira geral em quase qualquer projeto.
 
-## Running unit tests
+## Contribuidores
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- [Matheus Inocêncio Lopes](https://github.com/matheuslopess1)
+- [Maria Alice Martins Silva](https://github.com/malicemartinss)
+- [Gracielly de Araújo Pereira Lopes](https://github.com/Graciellyaraujo)
+- [Thiago Teixeira de Oliveira](https://github.com/thiagoasd)
